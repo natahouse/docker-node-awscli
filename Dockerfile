@@ -69,6 +69,8 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && apk del .build-deps-yarn
 
 # Install AWS CLI and docker-compose
-RUN apk add --no-cache python3 python3-dev py-pip wget \
-	&& pip install awscli \
-  && pip install docker-compose
+RUN apk add --no-cache python3\
+  && pip3 install awscli \
+  && pip3 install docker-compose
+
+RUN apk add --no-cache git openssh ca-certificates
