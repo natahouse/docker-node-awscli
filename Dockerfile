@@ -73,4 +73,4 @@ RUN apk add --no-cache python3\
   && pip3 install awscli \
   && pip3 install docker-compose
 
-RUN apk add --no-cache git openssh ca-certificates
+RUN apk add --no-cache git openssh ca-certificates bash
